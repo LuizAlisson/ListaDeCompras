@@ -54,7 +54,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Javanese Text", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(345, 12);
+            this.lblTitulo.Location = new System.Drawing.Point(339, 12);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(289, 80);
             this.lblTitulo.TabIndex = 1;
@@ -75,6 +75,7 @@
             this.txbProduto.Name = "txbProduto";
             this.txbProduto.Size = new System.Drawing.Size(273, 44);
             this.txbProduto.TabIndex = 3;
+            this.txbProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbProduto_KeyDown);
             // 
             // btnAdiocionar
             // 
@@ -84,6 +85,7 @@
             this.btnAdiocionar.TabIndex = 4;
             this.btnAdiocionar.Text = "Adicionar";
             this.btnAdiocionar.UseVisualStyleBackColor = true;
+            this.btnAdiocionar.Click += new System.EventHandler(this.btnAdiocionar_Click);
             // 
             // libCompras
             // 
@@ -102,6 +104,7 @@
             this.btnExcluir.TabIndex = 6;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -111,6 +114,7 @@
             this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar lista";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
